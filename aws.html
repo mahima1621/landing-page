@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    li{
+        list-style-type:none;
+    }
+    button{
+        background-color:red;
+
+    }
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+  font-size: 30px;
+}
+hr{
+    width:10%;
+
+}
+.item5 img{
+height:200px;
+width:200px;
+border-radius: 50%;
+}
+
+.item2 .firstlist{
+  text-decoration: line-through;
+  color:red;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="grid-container">
+  <div class="item1">Lorem <br/>Ipsum</div>
+  <div class="item2">
+    <li class="firstlist">About</li>
+    <li>Services</li>
+    <li>Cuisine</li>
+    <li>Gallery</li>
+    <li>Contact</li>
+    <li>Book</li>
+    
+</div>
+  <div class="item3"><b>What are you<br/> having for lunch?</b></div>  
+  <div class="item4">Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut laboore et.<hr/> </div>
+  <div class="item5">
+  <div><img src="images/burger.jpg" alt="">
+  <img src="images/pakora.jpg" alt="">
+  <img src="images/puff.jpg" alt="">
+  <img src="images/samosa.jpg" alt="">
+  <img src="images/roll.jpg" alt="">
+  
+  </div>
+</div>
+
+
+<button>Cart</button>
+
+</body>
+</html>
